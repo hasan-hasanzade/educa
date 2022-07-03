@@ -1,7 +1,7 @@
 import React from 'react'
 import Logo from '../logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPhone, faEarthAmericas, faEnvelope, faAngleDown, faSearch } from '@fortawesome/free-solid-svg-icons'
+import { faPhone, faEarthAmericas, faEnvelope, faBars, faSearch, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
 import { menuItems } from "../menuItems";
 import MenuItems from "./MenuItems";
@@ -11,16 +11,26 @@ import { Link } from 'react-router-dom'
 const Header = () => {
 
    const [click, setClick] = useState(false);
-
+   const [burger, setBurger] = useState(false);
+   
+   const handleBurger = () => setBurger(!click)
    const handleClick = () => setClick(!click);
+   
+   const closeMobileMenu = () => setBurger(false);
 
    return (
       <header className='header'>
          <div className="header__container _container">
            <div className="header__logo">
-           <Link className='header__log' to="/"><img src={Logo} alt="Educa" /></Link>
+           <Link onClick={closeMobileMenu} className='header__log' to="/"><img src={Logo} alt="Educa" /></Link>
            </div>
+           
             <div className="header__menu menu">
+            <div className="burger__btn" onClick={handleBurger}>
+               <div className={burger ? 'header__burger active' : 'header__burger'}>
+                  <span></span>
+               </div>
+            </div>
                <div className="menu__info info">
                   <ul className="info__list">
                      <li className="info__item">
@@ -49,7 +59,7 @@ const Header = () => {
                   </ul>
                </div>
                <nav className="menu__nav">
-               <ul className="menus">
+               <ul  className={burger ? 'menus active' : 'menus'}>
                {menuItems.map((menu, index) => {
                   const depthLevel = 0;
                   return <MenuItems items={menu} key={index} depthLevel={depthLevel} />;

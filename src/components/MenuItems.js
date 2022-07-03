@@ -1,10 +1,12 @@
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-
 import Dropdown from "./Dropdown";
 
 const MenuItems = ({ items, depthLevel }) => {
   const [dropdown, setDropdown] = useState(false);
+
+  const [burger, setBurger] = useState(false);
+  const closeMobileMenu = () => setBurger(false);
 
   let ref = useRef();
 
@@ -56,7 +58,7 @@ const MenuItems = ({ items, depthLevel }) => {
           />
         </>
       ) : (
-        <Link to={items.path}>{items.title}</Link>
+        <Link onClick={closeMobileMenu} to={items.path}>{items.title}</Link>
       )}
     </li>
   );

@@ -1375,20 +1375,158 @@ select option {
   opacity: 0;
   visibility: hidden;
   padding-left: 0px;
-  /* default olaraq burada nonedır */
 }
 
 
-/* show elave etmeliyik */
 .dropdown.show {
   top: 68px;
   opacity: 1;
   visibility: visible;
 }
 
-/* .dropdown .dropdown-submenu {
+.dropdown .dropdown-submenu {
   position: absolute;
   left: 100%;
   top: -7px;
-} */
+}
 
+.header__burger {
+	display: none;
+	position: relative;
+	width: 30px;
+	height: 20px;
+	z-index: 5;
+	cursor: pointer;
+	margin: 12px;
+}
+
+@media (max-width:990px) {
+  .header__burger {
+    display: block;
+  }
+  .menu__info {
+    display: none;
+  }
+
+  .menu__item {
+    display: none;
+  }
+
+  .header__logo {
+    padding-right: 0px;
+  }
+
+  .header__menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .menu__nav {
+    border: none;
+  }
+
+  .menus {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 120px;
+    left: -100%;
+    opacity: 1;
+    z-index: 5000;
+    transition: all 0.5s ease;
+  }
+
+  .menus.active {
+    background: var(--primary-border-red);
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 100;
+  }
+  .dropdown {
+    display: block;
+    background-color: var(--primary-orange);
+    width: 140px;
+    top: 0px;
+    left:0px;
+    z-index: 500;
+    transition: all .5s ease;
+    opacity: 0;
+    visibility: hidden;
+    padding-left: 0px;
+  }
+  
+  
+  .dropdown.show {
+    top: 28px;
+    left: 130px;
+    opacity: 1;
+    visibility: visible;
+  }
+  .menu-items a,
+  .menu-items button{
+    color: var(--primary-white);
+  }
+
+  .dropdown li a {
+    padding: 10px 20px!important;
+  }
+
+  .menu-items a:hover {
+  color: var(--primary-dark-font);
+  }
+}
+
+.header__burger::before,
+.header__burger::after {
+	content:'';
+	background: rgb(0, 0, 0);
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	left: 0;
+	transition: all .3s ease 0s;
+}
+.header__burger::before {
+	top: 0;
+}
+.header__burger::after {
+	bottom: 0;
+}
+.header__burger span{
+	position: absolute;
+	background: rgb(0, 0, 0);
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	top: 9px;
+	transition: all .3s ease 0s;
+}
+.header__burger.active span {
+	transform: scale(0);
+}
+.header__burger.active::before {
+	transform: rotate(45deg);
+	top: 10px;
+}
+.header__burger.active::after {
+	transform: rotate(-45deg);
+	bottom: 8px;
+}
+
+.burger__btn {
+  background: var(--primary-orange);
+}
+
+/* COURSES GRID */
+
+.courses-grids__heading {
+  background-image: url('./assets/images/courses-grids/courses-gridbg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 100px 0px 0px 0px;
+}
