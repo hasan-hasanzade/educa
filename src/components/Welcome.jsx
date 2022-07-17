@@ -1,10 +1,12 @@
-import React from 'react'
+import React,{useEffect}from 'react'
 import Line from '../line-dec.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGraduationCap, faEarthAsia, faClock, faBook } from '@fortawesome/free-solid-svg-icons'
 
 const Welcome = () => {
+
   return (
+   
     <section className='page__welcome welcome'>
       <div className="welcome__container _container">
          <div className="row">

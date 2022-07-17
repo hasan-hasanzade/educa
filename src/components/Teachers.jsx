@@ -27,10 +27,10 @@ const Teachers = () => {
                      </a>
                      <div className="teachers__hover">
                         <ul>
-                           <li><FontAwesomeIcon icon={faFacebookF} size="xl"/></li>
-                           <li><FontAwesomeIcon icon={faInstagram} size="xl"/></li>
-                           <li><FontAwesomeIcon icon={faTwitter} size="xl"/></li>
-                           <li><FontAwesomeIcon icon={faTiktok} size="xl"/></li>
+                           <li><a href="#"><FontAwesomeIcon className='teacher__icon' icon={faFacebookF} size="x"/></a></li>
+                           <li><a href="#"><FontAwesomeIcon className='teacher__icon' icon={faInstagram} size="x"/></a></li>
+                           <li><a href="#"><FontAwesomeIcon className='teacher__icon' icon={faTwitter} size="x"/></a></li>
+                           <li><a href=""><FontAwesomeIcon className='teacher__icon' icon={faTiktok} size="x"/></a></li>
                         </ul>
                      </div>
                   </div>
@@ -51,10 +51,10 @@ const Teachers = () => {
                      </a>
                      <div className="teachers__hover">
                         <ul>
-                           <li><FontAwesomeIcon icon={faFacebookF} size="xl"/></li>
-                           <li><FontAwesomeIcon icon={faInstagram} size="xl"/></li>
-                           <li><FontAwesomeIcon icon={faTwitter} size="xl"/></li>
-                           <li><FontAwesomeIcon icon={faTiktok} size="xl"/></li>
+                           <li><a href="#"><FontAwesomeIcon className='teacher__icon' icon={faFacebookF} size="x"/></a></li>
+                           <li><a href="#"><FontAwesomeIcon className='teacher__icon' icon={faInstagram} size="x"/></a></li>
+                           <li><a href="#"><FontAwesomeIcon className='teacher__icon' icon={faTwitter} size="x"/></a></li>
+                           <li><a href=""><FontAwesomeIcon className='teacher__icon' icon={faTiktok} size="x"/></a></li>
                         </ul>
                      </div>
                   </div>
@@ -75,10 +75,10 @@ const Teachers = () => {
                      </a>
                      <div className="teachers__hover">
                         <ul>
-                           <li><FontAwesomeIcon icon={faFacebookF} size="xl"/></li>
-                           <li><FontAwesomeIcon icon={faInstagram} size="xl"/></li>
-                           <li><FontAwesomeIcon icon={faTwitter} size="xl"/></li>
-                           <li><FontAwesomeIcon icon={faTiktok} size="xl"/></li>
+                           <li><a href="#"><FontAwesomeIcon className='teacher__icon' icon={faFacebookF} size="x"/></a></li>
+                           <li><a href="#"><FontAwesomeIcon className='teacher__icon' icon={faInstagram} size="x"/></a></li>
+                           <li><a href="#"><FontAwesomeIcon className='teacher__icon' icon={faTwitter} size="x"/></a></li>
+                           <li><a href=""><FontAwesomeIcon className='teacher__icon' icon={faTiktok} size="x"/></a></li>
                         </ul>
                      </div>
                   </div>
@@ -99,10 +99,10 @@ const Teachers = () => {
                      </a>
                      <div className="teachers__hover">
                         <ul>
-                           <li><FontAwesomeIcon icon={faFacebookF} size="xl"/></li>
-                           <li><FontAwesomeIcon icon={faInstagram} size="xl"/></li>
-                           <li><FontAwesomeIcon icon={faTwitter} size="xl"/></li>
-                           <li><FontAwesomeIcon icon={faTiktok} size="xl"/></li>
+                        <  li><a href="#"><FontAwesomeIcon className='teacher__icon' icon={faFacebookF} size="x"/></a></li>
+                           <li><a href="#"><FontAwesomeIcon className='teacher__icon' icon={faInstagram} size="x"/></a></li>
+                           <li><a href="#"><FontAwesomeIcon className='teacher__icon' icon={faTwitter} size="x"/></a></li>
+                           <li><a href=""><FontAwesomeIcon className='teacher__icon' icon={faTiktok} size="x"/></a></li>
                         </ul>
                      </div>
                   </div>

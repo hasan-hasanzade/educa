@@ -29,13 +29,9 @@ export const menuItems = [
          path: '/classic-events'
        },
        {
-         title: "Calendar events",
-         path: '/calendar-events'
-       },
-       {
          title: "Single event",
          path: '/single-event'
-       },
+       }
      ],
    },
  
@@ -53,15 +49,7 @@ export const menuItems = [
        {
          title: "Single teacher",
          path: '/single-teacher'
-       },
-       {
-         title: "Gallery 4 columns",
-         path: '/gallery-4-columns'
-       },
-       {
-         title: "Gallery 3 columns",
-         path: '/gallery-3-columns'
-       },
+       }
      ],
    },
  
@@ -71,10 +59,6 @@ export const menuItems = [
        {
          title: "Classic news",
          path: '/classic-news'
-       },
-       {
-         title: "Grid news",
-         path: '/grid-news'
        },
        {
          title: "Single post",

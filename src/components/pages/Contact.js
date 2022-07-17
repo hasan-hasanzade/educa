@@ -1,9 +1,16 @@
 import React from 'react'
-import Img1 from '../../assets/images/teachers/teacher-1.jpg'
+import ContactHeading from '../ContactHeading'
+import ContactInfo from '../ContactInfo'
+import ContactForm from '../ContactForm'
+
 
 const Contact = () => {
   return (
-    <div><img src={Img1}/></div>
+    <>
+    <ContactHeading />
+    <ContactInfo />
+    <ContactForm />
+    </>
   )
 }
 

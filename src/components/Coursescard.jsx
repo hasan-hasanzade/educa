@@ -1,6 +1,8 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight} from '@fortawesome/free-solid-svg-icons'
 
-const SingleCourseAnvar = ({key,name,image,price,imgTeacher,text}) => {
+const Coursescard = ({key,name,image,price,imgTeacher,text}) => {
   return (
    <div className="courses__wrapper" key={key}>
    <div className="courses__item">
@@ -16,7 +18,7 @@ const SingleCourseAnvar = ({key,name,image,price,imgTeacher,text}) => {
          <p>Ugh chambray lumbersexual food truc artisan meditation sartorial post-ironic Wes Anderson.</p>
          <div className="courses__btn">
             <a href="">
-               view more
+               view more <FontAwesomeIcon icon={faArrowRight} size="x"/>
             </a>
          </div>
       </div>
@@ -25,4 +27,4 @@ const SingleCourseAnvar = ({key,name,image,price,imgTeacher,text}) => {
   )
 }
 
-export default SingleCourseAnvar
+export default Coursescard

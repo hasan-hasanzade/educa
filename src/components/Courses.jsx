@@ -4,15 +4,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css"
 import Slider from "react-slick";
 import myData from '../coursesdata.json'
-import SingleCourseAnvar from './Coursescard';
-// import { coursesData } from '../coursesdata';
-// import Course1 from '../assets/images/courses/course-1.jpg'
-// import Teacher1 from '../assets/images/courses/teacher-1.jpg'
-// import Course2 from '../assets/images/courses/course-2.jpg'
+import Coursescard from './Coursescard';
 
 
 
-const CoursesAnvar = () => {
+const Courses = () => {
    const settings = {
       dots: true,
       infinite: true,
@@ -28,7 +24,7 @@ const CoursesAnvar = () => {
       initialSlide: 0,
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 1124,
           settings: {
             slidesToShow: 3,
             slidesToScroll: 3,
@@ -37,7 +33,7 @@ const CoursesAnvar = () => {
           }
         },
         {
-          breakpoint: 600,
+          breakpoint: 841,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
@@ -45,12 +41,13 @@ const CoursesAnvar = () => {
           }
         },
         {
-          breakpoint: 480,
+          breakpoint: 600,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1
           }
-        }
+        },
+        
       ]
     };
   return (
@@ -66,16 +63,13 @@ const CoursesAnvar = () => {
          <div className="row">
            <Slider {...settings}>
             {myData.map((item) => (
-                <SingleCourseAnvar key={item.id} name={item.name} image={item.image} price={item.price} imgTeacher={item.imgTeacher} text={item.text}/>
+                <Coursescard  name={item.name} image={item.image} price={item.price} imgTeacher={item.imgTeacher} text={item.text}/>
             ))}
-           
-           
-           
-            </Slider> 
+           </Slider> 
          </div>
       </div>
     </section>
   )
 }
 
-export default CoursesAnvar
+export default Courses

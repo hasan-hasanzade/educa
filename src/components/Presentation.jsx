@@ -11,7 +11,7 @@ const Presentation = () => {
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src={Carousel1} class="d-block w-100" alt="..." />
-      <div class="carousel-caption text-left">
+      <div class="carousel-caption">
          <MovingText
             type="fadeInFromTop"
             duration="1000ms"
@@ -20,8 +20,7 @@ const Presentation = () => {
             timing="ease"
             iteration="1"
             fillMode="none">
-            <div className='presentation__fline'> Are you ready to study?</div>
-            <div className='presentation__scline'>We have the</div> 
+            <p className='presentation__fline'> Are you ready to study? <br /> We have the <span>Solution</span></p>
            
          </MovingText>
          <MovingText
@@ -32,10 +31,8 @@ const Presentation = () => {
             timing="ease-in"
             iteration="1"
             fillMode="none">
-            <div className="presentation__text">Nunc eget tempor neque. Aenean non ex sed nibh euismod ornare. 
-            <div className='presentation__sctext'>Nam congue nisi purus, sed luctus risus.</div> 
+            <p className="presentation__text">Nunc eget tempor neque Aenean non ex sed nibh euismod ornare. <br /> Nam congue nisi purus, sed luctus risus.</p> 
             <div className='presentation__btn'><a href='#'>Buy Now</a></div>
-            </div>
             
             
          </MovingText>
@@ -43,15 +40,30 @@ const Presentation = () => {
     </div>
     <div class="carousel-item">
       <img src={Carousel2} class="d-block w-100" alt="..." />
-      <div class="carousel-caption d-none d-md-block ">
+      <div class="carousel-caption">
+      <MovingText
+            type="fadeInFromTop"
+            duration="1000ms"
+            delay="0s"
+            direction="normal"
+            timing="ease"
+            iteration="1"
+            fillMode="none">
+            <p className='presentation__fline'> Next year more interesting! <br /> Check next <span>Feauters</span></p>
+           
+         </MovingText>
          <MovingText
-         type="fadeInFromTop"
-         duration="1000ms"
-         delay="0s"
-         direction="normal"
-         timing="ease"
-         iteration="1"
-         fillMode="none">
+            type="fadeInFromBottom"
+            duration="1000ms"
+            delay="0s"
+            direction="normal"
+            timing="ease-in"
+            iteration="1"
+            fillMode="none">
+            <p className="presentation__text">Nunc eget tempor neque Aenean non ex sed nibh euismod ornare. <br /> Nam congue nisi purus, sed luctus risus.</p> 
+            <div className='presentation__btn'><a href='#'>Buy Now</a></div>
+            
+            
          </MovingText>
       </div>
     </div>
